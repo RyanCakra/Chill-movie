@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: var(--bgsec);
+  background-color: var(--bg);
   height: 100vh;
 }
 
@@ -58,6 +58,7 @@ body {
   color: #fff;
   white-space: nowrap;
   font-size: medium;
+  position: relative;
 }
 
 .nav-link:hover {
@@ -67,10 +68,14 @@ body {
 .nav-link::after {
   content: '';
   display: block;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--blue);
+  background-color: var(--blue);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
   transform: scaleX(0);
-  transition: 0.2s linear;
+  transition: transform 0.2s linear;
 }
 
 .nav-link:hover::after {
@@ -210,4 +215,92 @@ button i {
 
 /* hero section start */
 
+.hero-section {
+  position: relative;
+  top: 80px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181a1c;
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 45vw;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background-color: red;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3254ff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2339b3;
+}
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
 /* hero section end */
