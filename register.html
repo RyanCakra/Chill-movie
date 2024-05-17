@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font loto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/register.css" />
+    <title>Chill - Register</title>
+  </head>
+  <body>
+    <section class="register-page">
+      <div class="register-form">
+        <a href="/index.html" class="logo-form"><img src="/assets/img/logo2.png" alt="" /></a>
+        <div class="welcome-title">
+          <h1>Daftar</h1>
+          <h4>Selamat datang!</h4>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Konfirmasi Kata Sandi</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required />
+            <span class="outer-form">
+              <p>Sudah punya akun?<a href="/login.html" class="regis">Masuk</a></p>
+            </span>
+          </div>
+          <div class="button">
+            <button type="submit" class="btn-primary">Daftar</button>
+            <span>atau</span>
+            <button type="button" class="btn-google"><i class="fa-brands fa-google"></i>Daftar dengan Google</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
