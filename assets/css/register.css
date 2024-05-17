@@ -86,7 +86,31 @@ body {
   padding: 10px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 1);
   border-radius: 20px;
+}
+
+.pw-container {
+  position: relative;
+}
+
+.pw-container input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.pw-container .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
 }
 
 .outer-form {

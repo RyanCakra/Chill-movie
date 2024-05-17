@@ -891,6 +891,11 @@ footer {
   flex: 1;
   margin-right: 15px;
 }
+
+.footer-section i {
+  display: none;
+}
+
 .footer-helper {
   list-style: none;
   line-height: 1.5em;
@@ -955,8 +960,8 @@ footer {
     margin-bottom: 10px;
   }
   .footer-logo img {
-    height: 35px;
-    width: 80px;
+    width: 85px;
+    height: 30px;
   }
   .footer-logo p {
     font-size: 0.8em;
@@ -986,8 +991,8 @@ footer {
     display: none;
   }
 
-  .footer-section h3::after {
-    content: '>';
+  .footer-section h3 .fa-chevron-right {
+    display: inline;
     float: right;
   }
 
@@ -995,7 +1000,12 @@ footer {
     display: block;
   }
 
-  .footer-section h3.active::after {
-    content: 'v';
+  .footer-section h3.active .fa-chevron-down {
+    display: inline;
+    float: right;
   }
+}
+
+.footer-section h3 .fa-chevron-down {
+  display: none;
 }
